@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        border: 0px re solid;
+      }
+      body,
+      html {
+        height: 99%;
+        width: 99%;
+        font-size: 0;
+      }
+      #a {
+        position: fixed;
+        width: 100px;
+        height: 50px;
+        bottom: 10px;
+        right: 50%;
+        background: rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px 10px black;
+      }
+      iframe {
+        width: 100%;
+        height: 100%;
+        transform-origin: left top;
+        transform: scale(1.02);
+      }
+      p {
+        font-size: 10px;
+        color: black;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <iframe
+      src="https://logos-rhema.space/smdj8/0051.html"
+      frameborder="0"
+      id="d"
+      allow="autoplay"
+    ></iframe>
+    <div id="a" onclick="aa()"></div>
+  </body>
+  <script>
+    function aa() {
+      let q = Math.floor(Math.random() * 1983 + 1);
+      document.getElementById("d").src =
+        "https://logos-rhema.space/smdj8/" + q.toString();
+    }
+  </script>
+</html>
